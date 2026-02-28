@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Genesis Consultation",
+    "slug": "genesis-consultation",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "genesis-consultation",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#0A0A0A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.genesis.consultation",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Genesis Consultation needs microphone access for voice calls with researchers."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0A"
+      },
+      "package": "com.genesis.consultation",
+      "permissions": ["RECORD_AUDIO"]
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}

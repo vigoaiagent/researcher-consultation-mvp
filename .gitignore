@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.expo/
+.turbo/
+*.tsbuildinfo
+.env
+.env.local
+.env.*.local
+.DS_Store
+ios/
+android/
+
+# Compiled output from shared package
+packages/shared/src/**/*.js
+packages/shared/src/**/*.js.map
+packages/shared/src/**/*.d.ts
+packages/shared/src/**/*.d.ts.map
+
+# Vite compiled config
+apps/web/vite.config.js
+apps/web/vite.config.d.ts

@@ -1,0 +1,16 @@
+{
+  "name": "researcher-consultation-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:web": "pnpm --filter @rcm/web dev",
+    "dev:mobile": "pnpm --filter @rcm/mobile start",
+    "build": "pnpm --filter @rcm/shared build && pnpm --filter @rcm/web build",
+    "build:shared": "pnpm --filter @rcm/shared build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
