@@ -18,6 +18,12 @@ RUN pnpm install --frozen-lockfile
 COPY packages/shared/ packages/shared/
 COPY apps/web/ apps/web/
 
+# Accept Railway build args for Vite env variables
+ARG VITE_API_URL
+ARG VITE_SOCKET_URL
+ARG VITE_WALLETCONNECT_PROJECT_ID
+ARG VITE_AGORA_APP_ID
+
 # Build shared package first, then web
 RUN pnpm --filter @rcm/shared build
 RUN pnpm --filter @rcm/web build
