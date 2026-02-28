@@ -27,5 +27,5 @@ FROM node:18-alpine AS runner
 RUN npm install -g serve
 WORKDIR /app
 COPY --from=builder /app/apps/web/dist ./dist
-EXPOSE 3000
-CMD ["serve", "-s", "dist", "-l", "3000"]
+EXPOSE ${PORT:-3000}
+CMD ["sh", "-c", "serve -s dist -l ${PORT:-3000}"]
